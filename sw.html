@@ -4,7 +4,7 @@
     <head>
         <title>installing service worker</title>
         <script type="text/javascript">
-            var swsource = "http://localhost:8089/clobs.minify.js?id=maybellineapac&i=9&v=1&20140303";
+            var swsource = "https://sandy2110.github.io/amp_test.github.io/clobs.minify.js?id=maybellineapac&i=9&v=1&20140303";
             if("serviceWorker" in navigator) {
                 navigator.serviceWorker.register(swsource).then(function(reg){
                     console.log('ServiceWorker scope: ', reg.scope);
