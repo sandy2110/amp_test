@@ -4,10 +4,10 @@
     <head>
         <title>installing service worker</title>
         <script type="text/javascript">
-		var window = {};
-		importScripts("/clobs.js?id=maybellineapac&i=9&v=1&20140303");
-		self.EventEmitter2 = window.EventEmitter2;
-            var swsource = self.EventEmitter2;
+		<!-- var window = {}; -->
+		<!-- importScripts("/clobs.js?id=maybellineapac&i=9&v=1&20140303"); -->
+		<!-- self.EventEmitter2 = window.EventEmitter2; -->
+            var swsource = "https://sandy2110.github.io/amp_test.github.io/clobs.js?id=maybellineapac&i=9&v=1&20140303";
             if("serviceWorker" in navigator) {
                 navigator.serviceWorker.register(swsource).then(function(reg){
                     console.log('ServiceWorker scope: ', reg.scope);
